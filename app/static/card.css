@@ -12,9 +12,6 @@ a { text-decoration: none; }
 a:link { color: #444444; text-decoration: none; }
 a:visited { color:#444444; }
 a:hover { text-decoration: underline; }
-.card a:link { color: #0087D2; text-decoration: none; }
-.card a:visited { color:#0087D2; }
-.card a:hover { text-decoration: underline; }
 
 
 /* better image resizing in IE */
@@ -28,6 +25,10 @@ html { height: 100%; background: #89CFF0; margin-left: auto; margin-right: auto;
 .card .head { line-height: 11.11mm; font-size: 6.35mm; border-bottom: 1px #FF6666 solid; padding: 0 1em 0 1em; } 
 .card .body { line-height: 6.3mm; width: 100%; }
 .card .line { border-bottom: 1px #6666FF solid; padding: 0 1em 0 1em; }
+.card a:link { color: #0087D2; text-decoration: none; }
+.card a:visited { color:#0087D2; }
+.card a:hover { text-decoration: underline; }
+.card textarea { height: 80mm; margin-left: 1mm; margin-right: 1mm; width: 152mm; }
 
 .footer { text-align: center; margin-top: 7mm; height: 7mm; width: 155mm; }
 .footer a { margin-left: 1.5em; margin-right: 1.5em; } 
