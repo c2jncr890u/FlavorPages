@@ -18,7 +18,12 @@ application = tornado.web.Application( [
     #static
     ( "/",                          controllers.index       ),
     ( "/about",                     controllers.about       ),
-    ( "/privacy",                   controllers.privacy     ),     
+    ( "/contact",                   controllers.contact     ),
+    ( "/terms",                     controllers.terms       ),
+    ( "/privacy",                   controllers.privacy     ),  
+
+    #forms
+    ( "/newrecipe",                 controllers.newrecipe   ),   
    
 ], **settings )
 
