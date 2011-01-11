@@ -15,8 +15,10 @@ settings = dict(
 
 application = tornado.web.Application( [
 
-   #static
-   ( "/",                           controllers.index          ),
+    #static
+    ( "/",                          controllers.index       ),
+    ( "/about",                     controllers.about       ),
+    ( "/privacy",                   controllers.privacy     ),     
    
 ], **settings )
 
