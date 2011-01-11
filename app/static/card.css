@@ -28,4 +28,5 @@ html { height: 100%; background: #89CFF0; margin-left: auto; margin-right: auto;
 .card .body { line-height: 6.3mm; width: 100%; }
 .card .line { border-bottom: 1px #6666FF solid; padding: 0 1em 0 1em; }
 
-.footer { margin-top: 7mm; height: 7mm; width: 155mm; } 
+.footer { margin-top: 7mm; height: 7mm; width: 155mm; }
+.footer a { margin-left: 5em; } 
