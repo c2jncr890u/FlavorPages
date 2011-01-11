@@ -9,9 +9,11 @@ body { font: 75%/1.25 Arial, Helvetica, sans-serif; }
 html > body { font-size: 12px; }
 
 a { text-decoration: none; }
-a:link { color: #0087D2; text-decoration: none; }
+a:link { color: #222222; text-decoration: none; }
 a:hover { text-decoration: underline; }
-a:visited { color:#0087D2; }
+.card a:link { color: #0087D2; text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+
 
 /* better image resizing in IE */
 img{-ms-interpolation-mode:bicubic;}
@@ -19,7 +21,9 @@ img{-ms-interpolation-mode:bicubic;}
 
 html { height: 100%; background: #89CFF0; }
 
-.card { margin-top: 100px; width: 155mm; height: 102mm; background:#F9F7F5; margin-left: auto; margin-right: auto; font-family: "Courier New",monospace; background-image: url(card.jpg); color: #222; text-shadow: 0px 0px 1px #666; }
+.card { margin-top: 100px; width: 155mm; height: 102mm; background:#F9F7F5; margin-left: auto; margin-right: auto; font-family: "Courier New",monospace; background-image: url(/card.jpg); color: #222; text-shadow: 0px 0px 1px #666; }
 .card .head { line-height: 11.11mm; font-size: 6.35mm; border-bottom: 1px #FF6666 solid; padding: 0 1em 0 1em; } 
 .card .body { line-height: 6.3mm; width: 100%; }
 .card .line { border-bottom: 1px #6666FF solid; padding: 0 1em 0 1em; }
+
+.footer { margin-top: 50px; width: 155mm; } 
