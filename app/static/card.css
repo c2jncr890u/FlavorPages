@@ -12,6 +12,7 @@ a { text-decoration: none; }
 a:link { color: #222222; text-decoration: none; }
 a:hover { text-decoration: underline; }
 .card a:link { color: #0087D2; text-decoration: none; }
+.card a:visited { color:#0087D2; }
 .card a:hover { text-decoration: underline; }
 
 
