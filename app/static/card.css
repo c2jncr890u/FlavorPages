@@ -9,7 +9,8 @@ body { font: 75%/1.25 Arial, Helvetica, sans-serif; }
 html > body { font-size: 12px; }
 
 a { text-decoration: none; }
-a:link { color: #222222; text-decoration: none; }
+a:link { color: #444444; text-decoration: none; }
+a:visited { color:#444444; }
 a:hover { text-decoration: underline; }
 .card a:link { color: #0087D2; text-decoration: none; }
 .card a:visited { color:#0087D2; }
