@@ -28,7 +28,8 @@ html { height: 100%; background: #89CFF0; margin-left: auto; margin-right: auto;
 .card a:link { color: #0087D2; text-decoration: none; }
 .card a:visited { color:#0087D2; }
 .card a:hover { text-decoration: underline; }
-.card textarea { height: 80mm; margin-top: 1mm; margin-left: 1mm; width: 152mm; }
+.card textarea { height: 87mm; margin-top: 1mm; margin-left: 1mm; width: 152mm; }
+.card .head input { float: right; }
 
 .footer { text-align: center; margin-top: 7mm; height: 7mm; width: 155mm; }
 .footer a { margin-left: 1.5em; margin-right: 1.5em; } 
