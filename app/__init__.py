@@ -15,16 +15,14 @@ settings = dict(
 
 application = tornado.web.Application( [
 
-    #static
     ( "/",                          controllers.index       ),
     ( "/about",                     controllers.about       ),
     ( "/contact",                   controllers.contact     ),
+    ( "/newrecipe",                 controllers.newrecipe   ),    
+    ( "/privacy",                   controllers.privacy     ), 
+    ( "/thanks",                    controllers.thanks      ), 
     ( "/terms",                     controllers.terms       ),
-    ( "/privacy",                   controllers.privacy     ),  
-
-    #forms
-    ( "/newrecipe",                 controllers.newrecipe   ),   
-   
+          
 ], **settings )
 
 
@@ -39,3 +37,5 @@ if __name__ == "__main__":
    http_server.listen( listen_port )
 
    tornado.ioloop.IOLoop.instance().start()
+
+
