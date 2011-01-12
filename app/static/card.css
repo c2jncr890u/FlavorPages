@@ -35,7 +35,7 @@ html { height: 100%; background: #89CFF0; }
 .card textarea { height: 87mm; margin-top: 2px; margin-left: 2px; width: 300px; }
 .card .head input { float: right; }
 
-.footer { text-align: center; margin-top: 26px; width: 585px; }
+.footer { text-align: center; margin-top: 26px; width: 585px; font-size: 93%; font-family: Arial, Helvetica, sans-serif; }
 .footer a { margin-left: 1.5em; margin-right: 1.5em; } 
 
 
