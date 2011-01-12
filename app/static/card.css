@@ -19,11 +19,12 @@ a:hover { text-decoration: underline; }
 
 /* better image resizing in IE */
 img{-ms-interpolation-mode:bicubic;}
+
 @font-face { font-family:Courier_New; src:url(/Courier_New.ttf); }
 
 html { height: 100%; background: #89CFF0; }
 
-#dead-center { position:absolute; top:50%; height:426px; margin-top:-213px; }
+#dead-center { position:absolute; top:50%; height:426px; margin-top:-213px; margin-left: auto; margin-right: auto; }
 .card { width: 585px; height: 385px; background:#F9F7F5; font-family: 'Courier New',Courier_New,monospace; background-image: url(/card.jpg); color: #222; text-shadow: 0px 0px 1px #666; }
 .card .head { line-height: 43px; font-size: 153.9%; border-bottom: 1px #FF6666 solid; padding: 0 1em 0 1em; } 
 .card .body { line-height: 23px; width: 100%; font-size: 85%; }
@@ -36,3 +37,8 @@ html { height: 100%; background: #89CFF0; }
 
 .footer { text-align: center; margin-top: 26px; width: 585px; }
 .footer a { margin-left: 1.5em; margin-right: 1.5em; } 
+
+
+
+
+
