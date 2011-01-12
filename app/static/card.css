@@ -20,10 +20,10 @@ img{-ms-interpolation-mode:bicubic;}
 
 html { height: 100%; background: #89CFF0; margin-left: auto; margin-right: auto; width: 155mm; }
 
-#dead-center { position:absolute; top:50%; height:116mm; margin-top:-58mm; }
-.card { width: 155mm; height: 102mm; background:#F9F7F5; font-family: 'Courier New',Courier_New,monospace; background-image: url(/card.jpg); color: #222; text-shadow: 0px 0px 1px #666; }
-.card .head { line-height: 11.11mm; font-size: 6.35mm; border-bottom: 1px #FF6666 solid; padding: 0 1em 0 1em; } 
-.card .body { line-height: 6.3mm; width: 100%; }
+#dead-center { position:absolute; top:50%; height:426px; margin-top:-58mm; }
+.card { width: 585px; height: 385px; background:#F9F7F5; font-family: 'Courier New',Courier_New,monospace; background-image: url(/card.jpg); color: #222; text-shadow: 0px 0px 1px #666; }
+.card .head { line-height: 43px; font-size: 6.35mm; border-bottom: 1px #FF6666 solid; padding: 0 1em 0 1em; } 
+.card .body { line-height: 24px; width: 100%; }
 .card .line { border-bottom: 1px #6666FF solid; padding: 0 1em 0 1em; }
 .card a:link { color: #0087D2; text-decoration: none; }
 .card a:visited { color:#0087D2; }
@@ -31,5 +31,5 @@ html { height: 100%; background: #89CFF0; margin-left: auto; margin-right: auto;
 .card textarea { height: 87mm; margin-top: 1mm; margin-left: 1mm; width: 152mm; }
 .card .head input { float: right; }
 
-.footer { text-align: center; margin-top: 7mm; height: 7mm; width: 155mm; }
+.footer { text-align: center; margin-top: 26px; width: 585px; }
 .footer a { margin-left: 1.5em; margin-right: 1.5em; } 
