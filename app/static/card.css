@@ -37,6 +37,7 @@ html { height: 100%; background: #89CFF0; }
 
 .footer { text-align: center; margin-top: 26px; width: 585px; color: #222; font-size: 93%; font-family: Arial, Helvetica, sans-serif; }
 .footer a { margin-left: 1.5em; margin-right: 1.5em; } 
+.footer a.active { font-weight: bold; }
 
 
 
