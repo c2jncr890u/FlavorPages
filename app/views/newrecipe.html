@@ -7,28 +7,19 @@
         <meta name="description" content="Don't fret over dinner ideas. Flavorpages finds personalized recipes that are sure to please even the pickiest eaters. Dietary restrictions? No problem. It's easy to create custom menu plans for gluten free, lactose free, vegetarian, vegan, low fat, low carb, or food sensitivities." />
         <link rel="stylesheet" type="text/css" href="/card.css"/>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script> 
-        <script>
-        function submit(){
-            $.post(
-                '/newrecipe',
-                { 'text': $('textarea').val() },
-                function (data) {
-                     window.location.href = "/thanks";
-                }
-            );
-        }
-        </script>
     </head>
     <body>
         <div id="dead-center">
             <div class="card">
-                <div class="head">Your Recipe<input type="submit" value="Submit" onclick="submit()"/></div>
-                <div class="body">
-                    <textarea rows="14" cols="80">
-                    Provide as much detail as possible. Recipes may be edited before publishing. 
-                    Be sure to read the Terms of Use before submitting!
-                    </textarea>
-                </div>
+                <form action="/newrecipe" method="post">
+                    <div class="head">Your Recipe<input type="submit" value="Submit"/></div>
+                    <div class="body">
+                        <textarea name="text" rows="14" cols="80">
+                        Provide as much detail as possible. Recipes may be edited before publishing. 
+                        Be sure to read the Terms of Use before submitting!
+                        </textarea>
+                    </div>
+                </form>
             </div>
             <div class="footer">
                 <a href="/">Home</a>
