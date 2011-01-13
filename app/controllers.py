@@ -35,6 +35,7 @@ class newrecipe( tornado.web.RequestHandler ):
         s.connect("localhost")
         s.sendmail("mailbot@goodlook.me","sleepdev@gmail.com", msg.as_string())
         s.close()
+        self.redirect("/thanks")
 
 class thanks( tornado.web.RequestHandler ):
     def get( self ):
