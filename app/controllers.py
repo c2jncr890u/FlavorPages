@@ -37,6 +37,19 @@ class newrecipe( tornado.web.RequestHandler ):
         s.close()
         self.redirect("/thanks")
 
+class recipe( tornado.web.RequestHandler ):
+    """
+    TODO, calculate a safe random-key size
+    Recipes are stored in flat directories with the following structure
+    /recipe/cf90cw-fav4/
+        parent {hash}
+        children {[hash]}
+        text.md
+        text.html
+    """
+    def get( self ):
+        pass
+
 class thanks( tornado.web.RequestHandler ):
     def get( self ):
         self.render( "thanks.html" )
