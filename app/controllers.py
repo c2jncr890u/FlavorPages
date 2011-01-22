@@ -39,17 +39,28 @@ class newrecipe( tornado.web.RequestHandler ):
 
 class recipe( tornado.web.RequestHandler ):
     """
-    TODO, calculate a safe random-key size
     Recipes are stored in flat directories with the following structure
     /recipe/cf90cw-fav4/
+        meta {[key,value]}
         parent {hash}
         children {[hash]}
         text.md
         text.html
     """
     def get( self ):
-        pass
+        id = self.get_argument("id")
+        if not os.path.exists('/var/recipes/'+id+'/text.html'):
+            subprocess.Popen([  '/var/FlavorPages/app/scripts/Markdown.pl', 
+                                '/var/recipes/'+id+'/text.md',
+                                '/var/recipes/'+id+'/text.html' ]).wait()
+        self.render("recipe.html",id=id)
 
 class thanks( tornado.web.RequestHandler ):
     def get( self ):
         self.render( "thanks.html" )
+
+
+
+
+
+
