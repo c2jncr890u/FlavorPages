@@ -1,6 +1,8 @@
 
 from email.MIMEText import MIMEText
+import os.path
 import smtplib
+import subprocess
 import tornado.web
 
 class index( tornado.web.RequestHandler ):
