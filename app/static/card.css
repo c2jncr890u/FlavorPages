@@ -1,9 +1,3 @@
-/* Font Reset */
-body{font-size:13px/1.231; font-family:helvetica, arial, freesans, clean, sans-serif;*font-size:small;*font:x-small;}
-select,input,button,textarea,button{font-size:99%;font-family:helvetica, arial, freesans, clean, sans-serif;}
-table{font-size:inherit;font:100%;}
-pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
-
 /* Styles Reset */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, cite, a, abbr, acronym, address, em, strong, img, dl, dt, dd, ol, ul, li, form, fieldset, legend, label, table, caption, tbody, tfoot, thead, tr, th, td { padding: 0; border: 0; outline: 0; margin: 0; font-size: 1.0em; font-weight: inherit; font-family: inherit; font-style: inherit; vertical-align: baseline; }
 ol, ul { list-style: none; }
@@ -16,6 +10,11 @@ a:link { color: #444444; text-decoration: none; }
 a:visited { color:#444444; }
 a:hover { text-decoration: underline; }
 
+/* Font Reset */
+body{font:13px/1.231 helvetica, arial, freesans, clean, sans-serif;*font-size:small;*font:x-small;}
+select,input,button,textarea,button{font:99% helvetica, arial, freesans, clean, sans-serif;}
+table{font-size:inherit;font:100%;}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
 
 /* better image resizing in IE */
 img{-ms-interpolation-mode:bicubic;}
