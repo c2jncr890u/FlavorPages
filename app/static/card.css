@@ -1,6 +1,6 @@
 /* Font Reset */
-body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}
-select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}
+body{font:13px/1.231 helvetica, arial, freesans, clean, sans-serif;*font-size:small;*font:x-small;}
+select,input,button,textarea,button{font:99% helvetica, arial, freesans, clean, sans-serif;}
 table{font-size:inherit;font:100%;}
 pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
 
@@ -49,7 +49,8 @@ html { height: 100%; background: #89CFF0; }
     border-color: #bbb;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    font-style: helvetica, arial, freesans, clean, sans-serif;
+}
+#col-main > div > div {
 }
 #col-right { float: left; width: 20%; min-height: 1px; }
 
