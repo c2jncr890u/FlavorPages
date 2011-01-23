@@ -38,6 +38,7 @@ html { height: 100%; background: #89CFF0; }
 .footer a { margin-left: 1.5em; margin-right: 1.5em; } 
 .footer a.active { font-weight: bold; }
 
+#banner { height: 50px; }
 #col-left { float: left; width: 20%; min-height: 1px; }
 #col-main { float: left; width: 60%; min-height: 1px; }
 #col-main > div { 
@@ -52,6 +53,7 @@ html { height: 100%; background: #89CFF0; }
 #col-main > div > div {
 }
 #col-right { float: left; width: 20%; min-height: 1px; }
+
 
 
 
