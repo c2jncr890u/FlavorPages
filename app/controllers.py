@@ -41,7 +41,7 @@ class newrecipe( tornado.web.RequestHandler ):
         text = self.get_argument("text")
         id = pick_id()
         os.mkdir("/var/recipes/"+id)
-        file("/var/recipes/"+id+"/text.md").write( text )        
+        file("/var/recipes/"+id+"/text.md",'w').write( text )        
         subprocess.Popen([  '/var/FlavorPages/app/scripts/Markdown.pl', 
                                 '/var/recipes/'+id+'/text.md',
                                 '/var/recipes/'+id+'/text.html' ]).wait()
