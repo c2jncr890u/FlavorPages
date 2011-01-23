@@ -2,8 +2,10 @@
 from email.MIMEText import MIMEText
 import os.path
 import smtplib
+import string
 import subprocess
 import tornado.web
+
 
 class index( tornado.web.RequestHandler ):
     def get( self ):
@@ -25,36 +27,36 @@ class privacy( tornado.web.RequestHandler ):
     def get( self ):
         self.render( "privacy.html" )
 
+def pick_id():
+    id = ''.join(random.choice(string.letters) for _ in range(12))
+    while os.path.exists('/var/recipes/'+id):
+        id = ''.join(random.choice(string.letters) for _ in range(12))
+    return id
+
 class newrecipe( tornado.web.RequestHandler ):
     def get( self ):
         self.render( "newrecipe.html" )
     def post( self ):
-        msg = MIMEText(self.get_argument("text",""))
-        msg["Subject"] = "New recipe submitted to flavorpages.com"
-        msg["From"] = "mailbot@flavorpages.com"
-        msg["To"] = "sleepdev@gmail.com"
-        s = smtplib.SMTP()
-        s.connect("localhost")
-        s.sendmail("mailbot@goodlook.me","sleepdev@gmail.com", msg.as_string())
-        s.close()
-        self.redirect("/thanks")
+        text = self.get_argument("text")
+        id = pick_id()
+        os.mkdir("/var/recipes/"+id)
+        file("/var/recipes/"+id+"/text.md").write( text )        
+        subprocess.Popen([  '/var/FlavorPages/app/scripts/Markdown.pl', 
+                                '/var/recipes/'+id+'/text.md',
+                                '/var/recipes/'+id+'/text.html' ]).wait()
+        self.redirect("/recipe/"+id)
 
 class recipe( tornado.web.RequestHandler ):
     """
     Recipes are stored in flat directories with the following structure
     /recipe/cf90cw-fav4/
-        meta {[key,value]}
         parent {hash}
         children {[hash]}
         text.md
         text.html
     """
     def get( self ):
-        id = self.get_argument("id")
-        if not os.path.exists('/var/recipes/'+id+'/text.html'):
-            subprocess.Popen([  '/var/FlavorPages/app/scripts/Markdown.pl', 
-                                '/var/recipes/'+id+'/text.md',
-                                '/var/recipes/'+id+'/text.html' ]).wait()
+        id = self.get_argument("id")            
         self.render("recipe.html",id=id)
 
 class thanks( tornado.web.RequestHandler ):

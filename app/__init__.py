@@ -19,6 +19,7 @@ application = tornado.web.Application( [
     ( "/about",                     controllers.about       ),
     ( "/contact",                   controllers.contact     ),
     ( "/newrecipe",                 controllers.newrecipe   ),    
+    ( "/recipe/(?<id>.*)",          controllers.recipe      ),
     ( "/privacy",                   controllers.privacy     ), 
     ( "/thanks",                    controllers.thanks      ), 
     ( "/terms",                     controllers.terms       ),
