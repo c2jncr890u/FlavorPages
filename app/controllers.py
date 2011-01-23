@@ -56,8 +56,7 @@ class recipe( tornado.web.RequestHandler ):
         text.md
         text.html
     """
-    def get( self ):
-        id = self.get_argument("id")            
+    def get( self, id ): 
         self.render("recipe.html",id=id)
 
 class thanks( tornado.web.RequestHandler ):
