@@ -44,7 +44,7 @@ class newrecipe( tornado.web.RequestHandler ):
         file("/var/recipes/"+id+"/text.md",'w').write( text )  
         subprocess.Popen([  '/var/FlavorPages/app/scripts/Markdown.pl', 
                             '/var/recipes/'+id+'/text.md', ], 
-                            stdout=file('/var/recipes/'+id+'/text.html') 
+                            stdout=file('/var/recipes/'+id+'/text.html','w') 
         ).wait()
         self.redirect("/recipe/"+id)
 
