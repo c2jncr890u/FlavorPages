@@ -51,8 +51,6 @@ class recipe( tornado.web.RequestHandler ):
     """
     Recipes are stored in flat directories with the following structure
     /recipe/cf90cw-fav4/
-        parent {hash}
-        children {[hash]}
         text.md
         text.html
     """
