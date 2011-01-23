@@ -1,6 +1,7 @@
 
 from email.MIMEText import MIMEText
 import os.path
+import random
 import smtplib
 import string
 import subprocess
